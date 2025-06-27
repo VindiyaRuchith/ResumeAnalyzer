@@ -26,7 +26,7 @@ export default function Home() {
     formData.append("resume", resumeFile);
 
     try {
-      const res = await axios.post("/api/analyze", formData);
+      const res = await axios.post("http://localhost:5001/analyze", formData);
       setResult(res.data);
     } catch (err: any) {
       console.error(err);

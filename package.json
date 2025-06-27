@@ -1,0 +1,14 @@
+{
+  "name": "my-fullstack-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "echo 'Run apps individually in their folders'",
+    "version": "echo 'Root version tracking only: v1.0.0'",
+    "postinstall": "echo 'Install dependencies inside each workspace if needed'"
+  }
+}
